@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,4 +20,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', function () { return view('home');});
+
+Route::resource('post', PostController::class)->except('create');
+
+Route::resource('about', AboutController::class)->except('create');
+
+Route::resource('category', CategoryController::class)->except('create');
+
+Route::post('comment/{id}',[CommentController::class, 'answerComment'])->name('answer.comment');
+
+Route::resource('comment', CommentController::class)->except('create','index','show');

@@ -81,4 +81,9 @@ class CommentController extends Controller
     {
         //
     }
+
+    public function answerComment(Request $request, $id)
+    {
+        # code...
+    }
 }
