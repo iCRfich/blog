@@ -1,0 +1,175 @@
+#post-show-text {
+  text-align: justify;
+  margin: 0 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+#post-show-text img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.display-comment {
+  background: white;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.add-comment-block {
+  background: white;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.add-comment-block input, .add-comment-block textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+.add-comment-block textarea {
+  min-width: 100%;
+  min-height: 150px;
+  max-height: 150px;
+  resize: none;
+}
+.add-comment-block button[type=submit] {
+  width: 100%;
+  padding: 5px;
+  background: #0fb2b8;
+  color: white;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+#reply-comment-but, #edit-comment-but, .delete-comment-form {
+  display: inline;
+}
+
+#reply-comment-but, #edit-comment-but, #delete-comment-but {
+  color: white;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+#reply-comment-but {
+  background: #0fb2b8;
+}
+
+#edit-comment-but {
+  background: #b87a0f;
+}
+
+#delete-comment-but {
+  background: #c30b0b;
+}
+
+#update-form {
+  margin-top: 20px;
+}
+#update-form #close-reply-form, #update-form input[type=submit] {
+  display: inline;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#update-form #close-reply-form {
+  padding: 5px;
+  background: #0fb2b8;
+  color: white;
+}
+#update-form input[type=submit] {
+  padding: 5px;
+  background: #0fb853;
+  color: white;
+}
+
+#reply-form {
+  margin-top: 20px;
+}
+#reply-form .reply-comment-but {
+  padding: 5px;
+  background: #0fb853;
+  color: white;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.go-edit {
+  text-align: center;
+  border: 1px solid #eb7b04;
+  text-decoration: none;
+  padding: 5px;
+  margin: 25px auto;
+  display: block;
+  width: 100px;
+}
+.go-edit:hover {
+  -webkit-animation: goEdit 1s alternate infinite;
+          animation: goEdit 1s alternate infinite;
+}
+.go-edit:visited {
+  color: #eb7b04;
+}
+
+@-webkit-keyframes goEdit {
+  0% {
+    background-color: rgba(235, 123, 4, 0.086);
+    color: black;
+  }
+  25% {
+    background-color: rgba(235, 123, 4, 0.479);
+    color: black;
+  }
+  50% {
+    background-color: rgba(235, 123, 4, 0.741);
+    color: black;
+  }
+  100% {
+    background-color: #eb7b04;
+    color: black;
+  }
+}
+@keyframes goEdit {
+  0% {
+    background-color: rgba(235, 123, 4, 0.086);
+    color: black;
+  }
+  25% {
+    background-color: rgba(235, 123, 4, 0.479);
+    color: black;
+  }
+  50% {
+    background-color: rgba(235, 123, 4, 0.741);
+    color: black;
+  }
+  100% {
+    background-color: #eb7b04;
+    color: black;
+  }
+}
+.update-post-block {
+  background-color: white;
+  padding: 20px;
+}
+.update-post-block .update-divider {
+  border-top: 2px solid black;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 25px;
+}
+.update-post-block .update-title {
+  width: 100%;
+  display: block;
+}
+.update-post-block textarea {
+  min-height: 500px;
+}
+.update-post-block input[type=submit] {
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px;
+  background-color: aquamarine;
+  color: black;
+  font-size: 20px;
+}

@@ -16,11 +16,11 @@ return new class extends Migration
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
             $table->foreignId('post_id')->constrained()->onDelete('cascade')->onUpdate('cascade');
-            $table->foreignId('user_id')->constrained()->onDelete('cascade')->onUpdate('cascade')->nullable();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade')->onUpdate('cascade')->nullable(true);
             $table->string('email');
             $table->string('name');
             $table->text('text');
-            $table->foreignId('parent_id')->references('id')->on('comments')->nullable();
+            $table->foreignId('parent_id')->references('id')->on('comments')->nullable(true);
             $table->timestamps();
         });
     }

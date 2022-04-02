@@ -11286,3 +11286,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-image: url("http://cheshiregames.rpg.bg/wp-content/uploads/2018/07/fonnew.jpg");
+}
+
+.hide {
+  display: none !important;
+}

@@ -1,0 +1,118 @@
+.tabs {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tabs button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tabs button:hover {
+  background-color: #ddd;
+}
+
+.tabs button.active {
+  background-color: #ccc;
+}
+
+#create-about {
+  background-color: white;
+  padding: 20px;
+  display: block;
+}
+#create-about label {
+  margin-top: 10px;
+  font-size: 20px;
+  font-style: bold;
+}
+#create-about input, #create-about textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#create-about input[type=submit] {
+  margin-top: 20px;
+  background-color: #12c368;
+  color: white;
+  font-size: 20px;
+}
+
+#create-post {
+  background-color: white;
+  padding: 20px;
+}
+#create-post .divider {
+  border-top: 2px solid black;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 25px;
+}
+#create-post .title {
+  width: 100%;
+  display: block;
+}
+#create-post input[type=submit] {
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px;
+  background-color: aquamarine;
+  color: black;
+  font-size: 20px;
+}
+
+#create-category {
+  background: white;
+  padding: 20px;
+  display: block;
+}
+#create-category .add-new-category .divider {
+  text-align: center;
+  font-size: 30px;
+}
+#create-category .all-categories-title {
+  border-top: 2px solid black;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+#create-category .category-name {
+  font-size: 20px;
+}
+#create-category .category-name, #create-category .open-edit-category, #create-category .edit-category-block, #create-category .delete-category {
+  display: inline;
+}
+#create-category .delete-category-btn {
+  background-color: #b91919;
+  color: white;
+  border: 1px solid black;
+  padding: 2px 10px;
+}
+#create-category .open-edit-category {
+  background-color: #de5d22;
+  color: white;
+  border: 1px solid black;
+  padding: 2px 10px;
+}
+#create-category .categories-block {
+  margin-top: 20px;
+}
+#create-category .close-category-edit, #create-category .edit-category-block > form {
+  display: inline;
+}
+#create-category .edit-category-block input[type=submit] {
+  background: #0dc116;
+  border: 1px solid black;
+  color: white;
+}
+#create-category .close-category-edit {
+  background: #de5d22;
+  border: 1px solid black;
+  color: white;
+}

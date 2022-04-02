@@ -2,10 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CommentController extends Controller
 {
+
+    public function __construct()
+    {
+    }
     /**
      * Display a listing of the resource.
      *
@@ -34,7 +40,9 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $comment = new Comment();
+        $comment->storeComment($request);
+        return back();
     }
 
     /**
@@ -68,7 +76,9 @@ class CommentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $comment = new Comment();
+        $comment->updateComment($request, $id);
+        return back();
     }
 
     /**
@@ -79,11 +89,14 @@ class CommentController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Comment::find($id)->delete();
+        return back();
     }
 
-    public function answerComment(Request $request, $id)
+    public function answerComment(Request $request, $post_id, $comment_id)
     {
-        # code...
+        $comment = new Comment();
+        $comment->answer($request, $post_id, $comment_id);
+        return back();
     }
 }

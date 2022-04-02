@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CommentController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -14,20 +19,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
-Route::get('/', function () { return view('home');});
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::resource('post', PostController::class)->except('create');
+Route::get('/create', [HomeController::class, 'createBlock'])->name('create.block');
 
-Route::resource('about', AboutController::class)->except('create');
+Route::post('search',[PostController::class, 'search'])->name('search');
 
-Route::resource('category', CategoryController::class)->except('create');
+Route::resource('post', PostController::class)->except('create','index');
 
-Route::post('comment/{id}',[CommentController::class, 'answerComment'])->name('answer.comment');
+Route::resource('about', AboutController::class)->except('store','show','create','destroy');
+
+Route::resource('category', CategoryController::class)->except('index','create','edit');
+
+Route::post('comment/{post_id}/{comment_id}',[CommentController::class, 'answerComment'])->name('answer.comment');
 
 Route::resource('comment', CommentController::class)->except('create','index','show');

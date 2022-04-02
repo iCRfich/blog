@@ -1,0 +1,133 @@
+.tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  .tabs button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+
+  .tabs button:hover {
+    background-color: #ddd;
+  }
+  
+
+  .tabs button.active {
+    background-color: #ccc;
+  }
+  
+#create-about{
+    background-color: white;
+    padding: 20px;
+    display: block;
+    label{
+        margin-top: 10px;
+        font-size: 20px;
+        font-style: bold;
+    }
+    input,textarea{
+        width:100%;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"]{
+        margin-top: 20px;
+        background-color: rgb(18, 195, 104);
+        color:white;
+        font-size: 20px;
+    }
+}
+
+
+#create-post{
+    background-color: white;
+    padding: 20px;
+    
+    .divider{
+        border-top: 2px solid black;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 25px;
+    }
+    .title{
+        width: 100%;
+        display: block;
+    }
+
+    input[type="submit"]{
+        margin-top: 10px;
+        width: 100%;
+        padding: 5px;
+        background-color: aquamarine;
+        color: black;
+        font-size: 20px;
+    }
+}
+
+#create-category{
+    background: white;
+    padding: 20px;
+    display: block;
+    
+    .add-new-category{
+        .divider{
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+    .all-categories-title{
+        border-top: 2px solid black;
+        margin-top:20px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .category-name{
+        font-size: 20px;
+    }
+    .category-name,.open-edit-category, .edit-category-block ,.delete-category {
+        display: inline;
+    }
+
+    .delete-category-btn{
+        background-color: rgb(185, 25, 25);
+        color:white;
+        border: 1px solid black;
+        padding: 2px 10px;
+    }
+
+    .open-edit-category{
+        background-color: rgb(222, 93, 34);
+        color:rgb(255, 255, 255);
+        border: 1px solid black;
+        padding: 2px 10px;
+    }
+    .categories-block{
+        margin-top: 20px;
+    }
+
+    .close-category-edit ,.edit-category-block > form{
+        display: inline;
+    }
+
+    .edit-category-block{
+        input[type="submit"]{
+            background: rgb(13, 193, 22);
+            border: 1px solid black;
+            color:white;
+        }
+    }
+    .close-category-edit{
+        background: rgb(222, 93, 34);
+        border: 1px solid black;
+        color:white;
+    }
+}

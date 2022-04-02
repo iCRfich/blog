@@ -1,0 +1,180 @@
+#post-show-text{
+        text-align: justify;
+        margin: 0 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+
+            img{
+                max-width: 100%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+}
+
+
+.display-comment{
+    background: white;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.add-comment-block{
+    background: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    input, textarea{
+        display: block;
+        margin-bottom: 10px;
+    }
+    textarea{
+        min-width: 100%;
+        min-height: 150px;
+        max-height: 150px;
+        resize:none
+    }
+    button[type="submit"]{
+        width: 100%;
+        padding: 5px;
+        background: rgb(15, 178, 184);
+        color: white;
+        font-size: 15px;
+        border: 1px solid black;
+    }
+}
+
+
+#reply-comment-but,#edit-comment-but,.delete-comment-form{
+    display: inline;
+}
+
+
+#reply-comment-but,#edit-comment-but,#delete-comment-but{
+    color: white;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+#reply-comment-but{
+    background: rgb(15, 178, 184);
+    
+}
+
+#edit-comment-but{
+    background: rgb(184, 122, 15);
+}
+
+#delete-comment-but{
+    background: rgb(195, 11, 11);
+}
+
+#update-form{
+    margin-top: 20px;
+
+    #close-reply-form,  input[type="submit"]{
+        display: inline;
+        margin-top: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    #close-reply-form{
+        padding: 5px;
+        background: rgb(15, 178, 184);
+        color:white
+    }
+
+    input[type="submit"]{
+        padding: 5px;
+        background: rgb(15, 184, 83);
+        color:white
+    }
+}
+
+#reply-form{
+    margin-top: 20px;
+
+    .reply-comment-but{
+        padding: 5px;
+        background: rgb(15, 184, 83);
+        color:white;
+        margin-top: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+}
+
+.go-edit{
+    text-align: center;
+    border: 1px solid rgb(235, 123, 4);
+    text-decoration: none;
+    padding: 5px;
+    margin:  25px auto ;
+    display: block;
+    width: 100px;
+
+    &:hover{
+        animation: goEdit 1s alternate  infinite;
+    }
+
+    &:visited{
+        color:rgb(235, 123, 4);
+    }
+}
+
+@-webkit-keyframes goEdit { 
+    0%   {background-color: rgba(235, 123, 4, 0.086); color:black;}
+    25%  {background-color: rgba(235, 123, 4, 0.479); color:black;}
+    50%  {background-color: rgba(235, 123, 4, 0.741); color:black;}
+    100% {background-color: rgb(235, 123, 4); color:black;} 
+}
+
+@-moz-keyframes goEdit {   
+    0%   {background-color: rgba(235, 123, 4, 0.086); color:black;}
+    25%  {background-color: rgba(235, 123, 4, 0.479); color:black;}
+    50%  {background-color: rgba(235, 123, 4, 0.741); color:black;}
+    100% {background-color: rgb(235, 123, 4); color:black;} 
+}
+
+@-o-keyframes goEdit { 
+    0%   {background-color: rgba(235, 123, 4, 0.086); color:black;}
+    25%  {background-color: rgba(235, 123, 4, 0.479); color:black;}
+    50%  {background-color: rgba(235, 123, 4, 0.741); color:black;}
+    100% {background-color: rgb(235, 123, 4); color:black;} 
+}
+@keyframes goEdit {
+    0%   {background-color: rgba(235, 123, 4, 0.086); color:black;}
+    25%  {background-color: rgba(235, 123, 4, 0.479); color:black;}
+    50%  {background-color: rgba(235, 123, 4, 0.741); color:black;}
+    100% {background-color: rgb(235, 123, 4); color:black;} 
+}
+
+
+.update-post-block{
+    background-color: white;
+    padding: 20px;
+    
+    .update-divider{
+        border-top: 2px solid black;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 25px;
+    }
+    .update-title{
+        width: 100%;
+        display: block;
+    }
+
+    textarea{
+        min-height: 500px;
+    }
+
+    input[type="submit"]{
+        margin-top: 10px;
+        width: 100%;
+        padding: 5px;
+        background-color: aquamarine;
+        color: black;
+        font-size: 20px;
+    }
+}
