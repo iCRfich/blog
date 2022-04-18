@@ -4,7 +4,7 @@
 
 Блог - це веб-сайт основу якого складають пости(записи) які додає користувач, можуть містити текст, зображення та мультимедійні файли.
 
-<img src="../blog/public/readme/Screenshot_1.jpg" width="400">
+<img src="/public/readme/Screenshot_1.jpg" width="400">
 
 ## Можливості
 
@@ -19,6 +19,6 @@
 
 ## Демонстрація
 
-<img src="../blog/public/readme/Screenshot_1.jpg" width="400">
-<img src="../blog/public/readme/Screenshot_2.jpg" height="600">
-<img src="../blog/public/readme/Screenshot_3.jpg" width="400">
+<img src="/public/readme/Screenshot_1.jpg" width="400">
+<img src="/public/readme/Screenshot_2.jpg" height="600">
+<img src="/public/readme/Screenshot_3.jpg" width="400">
